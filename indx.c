@@ -10,7 +10,7 @@
 int occurance_count_cmp(const void *a, const void *b) {
     struct skorowizd *sa = (struct skorowizd *)a;
     struct skorowizd *sb = (struct skorowizd *)b;
-    return sb->occurance_count - sa->occurance_count;
+    return sa->occurance_count - sb->occurance_count;
 }
 
 int contains_word(char *line, char *word) {
